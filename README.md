@@ -40,3 +40,79 @@ Live Link : (https://huggingface.co/spaces/10Moin/Semantic_Book_recommender)
 ├── cached_documents.pkl      # Cached split documents
 ├── .env                      # Optional environment variables
 └── README.md
+
+---
+```
+## 🧪 How it Works
+
+1. Loads book descriptions and metadata from CSV
+2. Splits and embeds the text into vectors using `HuggingFace MiniLM`
+3. Stores embeddings in `ChromaDB` for semantic search
+4. Takes a user query → finds top matches via cosine similarity
+5. Filters based on:
+   - 📘 Category
+   - 😊 Emotional tone
+6. Displays recommended books in a Gradio UI
+
+---
+
+## ▶️ Run Locally
+
+### 1. Clone the repo
+
+```
+git clone https://github.com/yourusername/semantic-book-recommender.git
+cd semantic-book-recommender
+```
+
+### 2. Set up virtual environment
+
+```
+python -m venv .venv
+source .venv/bin/activate  # or .venv\Scripts\activate on Windows
+pip install -r requirements.txt
+```
+
+### 3. Run the app
+
+```> The Gradio UI will open in your browser automatically.```
+
+## 🌍 Deployment Ideas
+
+- Deploy to **HuggingFace Spaces**, **Render**, or **Railway**
+- Wrap in a **FastAPI** backend for a more robust REST API
+- Containerize with **Docker** for portability
+
+---
+
+## 📈 Future Improvements
+
+- ✅ Save user preferences and history  
+- 🔁 Add memory and chat-based interface using ChatGPT  
+- 🎯 Personalize recommendations based on user profile  
+- 📱 Build a mobile-first UI or React frontend  
+- 🔊 Add voice input or image-based search  
+
+---
+
+## 📺 Based on FreeCodeCamp’s Project
+
+Built while following this amazing LLM course by `freeCodeCamp`:
+
+> [LLM Course – Build a Semantic Book Recommender (Python, OpenAI, LangChain, Gradio)](https://youtu.be/Q7mS1VHm3Yw)
+
+---
+
+## 🙌 Author
+
+**Mohammad Moeenuddin**  
+Passionate about building AI-first experiences with LLMs, LangChain, and ML infra.  
+Say hi on [Twitter](https://x.com/im10Moin) | [LinkedIn](https://www.linkedin.com/in/mohammad-moeenuddin-558846226/) | [GitHub](https://github.com/Mohammad-10moin/)
+---
+
+## ⭐️ Show some love
+
+If you found this project helpful:
+⭐️ Star this repo
+```It helps others discover this and supports open-source learning!```
+---
